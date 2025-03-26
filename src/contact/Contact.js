@@ -23,7 +23,7 @@ const Contact = () => {
     }
   
     axios
-      .post("https://vercel.com/prap1s-projects/portfolio-backend/api/send-email", { name, email, message })
+      .post("https://portfolio-backend-psi-bay.vercel.app/api/send-email", { name, email, message })
       .then((response) => {
         console.log(response.data);
         toast.success("Message sent successfully!");
